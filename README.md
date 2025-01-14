@@ -50,13 +50,20 @@ def horner(coefficients, x):
 ### Dzielenie wielomianu:
 
 ```python
-    def horner_division(coefficients, c):
-        n = len(coefficients)
-        quotient = [0] * (n - 1)
-        remainder = coefficients[0]
-        for i in range(1, n):
-            quotient[i - 1] = remainder
-            remainder = remainder * c + coefficients[i]
-        return quotient, remainder
-
+def horner_division(coefficients, c):
+    n = len(coefficients)
+    quotient = [0] * (n - 1)
+    remainder = coefficients[0]
+    for i in range(1, n):
+        quotient[i - 1] = remainder
+        remainder = remainder * c + coefficients[i]
+    return quotient, remainder
+```
+### Dzielenie przez wielomian:
+```python
+coefficients = [4, -3, 1, 2, -5]
+c = 2
+quotient, remainder = horner_division(coefficients, c)
+print("Quotient:", quotient)  # Wynik: [4, 5, 11, 24]
+print("Remainder:", remainder)  # Wynik: 43
 
