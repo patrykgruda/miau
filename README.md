@@ -46,7 +46,17 @@ def horner(coefficients, x):
     for coefficient in coefficients:
         result = result * x + coefficient
     return result
+```
+### Dzielenie wielomianu:
 
-### Dzielenie wielomianu
+```python
+    def horner_division(coefficients, c):
+        n = len(coefficients)
+        quotient = [0] * (n - 1)
+        remainder = coefficients[0]
+        for i in range(1, n):
+            quotient[i - 1] = remainder
+            remainder = remainder * c + coefficients[i]
+        return quotient, remainder
 
 
