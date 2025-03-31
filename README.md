@@ -39,12 +39,13 @@ $W\left( 2 \right) = 2\left(  15\right)+20$
 
 $W\left( 2 \right) = 30+20=50$
 
-## 3. Zastosowanie schematu Hornera do dzielenia wielomianów:
+## 3. Zadania:
 
+1. Za pomocą schematu Hornera oblicz wartość wielomianu $W\left( x \right)=4x^{3}+5x^{2}+3x-7$ dla x = 3
 
+2. Podziel wielomian $W\left( x \right)=6x^{3}-4x^{2}+7x-22$ przez dwumian $W\left( x \right)=x-3$
 
-
-## 3. Implementacja algorytmu w Pythonie
+## 4. Implementacja algorytmu w Pythonie
 
 ### Obliczanie wartości wielomianu
 
