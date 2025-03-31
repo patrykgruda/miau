@@ -23,23 +23,21 @@ W schemacie Hornera przekształcany jest do postaci:
 $P(x) = (\dots((a_n x + a_{n-1})x + a_{n-2})x + \dots + a_1)x + a_0$
 
 ## 2.Przykład zastosowania schematu Hornera:
-Dany jest wielomian: $W\left( x \right)=4x^{4}-5x^{2}+7x-20$
+Dany jest wielomian: $W\left( x \right)=4x^{3}+2x^{2}-5x+20$
 
-$W\left( x \right) = x\left(  4x^{2}-5x+7\right)-20$
+$W\left( x \right) = x\left(  4x^{2}+2x-5\right)+20$
 
-$W\left( x \right) = x\left(  x\left( 4x-5 \right)+7\right)-20$
+$W\left( x \right) = x\left(  x\left( 4x+2 \right)-5\right)+20$
 
-$W\left( 2 \right) = 2\left(  2\left( 4\cdot 2-5 \right)+7\right)-20$
+$W\left( 2 \right) = 2\left(  2\left( 4\cdot 2+2 \right)-5\right)+20$
 
-$W\left( 2 \right) = 2\left(  2\left( 8 -5 \right)+7\right)-20$
+$W\left( 2 \right) = 2\left(  2\left( 8+2 \right)-5\right)+20$
 
-$W\left( 2 \right) = 2\left(  2\cdot3+7\right)-20$
+$W\left( 2 \right) = 2\left(  2\cdot20-5\right)+20$
 
-$W\left( 2 \right) = 2\left(  6+7\right)-20$
+$W\left( 2 \right) = 2\left(  15\right)+20$
 
-$W\left( 2 \right) = 2\cdot13-20$
-
-$W\left( 2 \right) = 26-20=6$
+$W\left( 2 \right) = 30+20=50$
 
 ## 3. Zastosowanie schematu Hornera do dzielenia wielomianów:
 
@@ -52,14 +50,6 @@ $W\left( 2 \right) = 26-20=6$
 
 ```python
 def horner(coefficients, x):
-    """
-    Funkcja oblicza wartość wielomianu dla zadanej wartości x
-    przy użyciu schematu Hornera.
-
-    :param coefficients: lista współczynników wielomianu [a_n, a_{n-1}, ..., a_0]
-    :param x: wartość, dla której liczymy wielomian
-    :return: wartość wielomianu
-    """
     result = 0
     for coefficient in coefficients:
         result = result * x + coefficient
