@@ -12,7 +12,7 @@ S chemat Hornera to efektywny algorytm służący do obliczania wartości wielom
 Wielomian w postaci ogólnej:
 
 
-$P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$
+$\P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$
 
 
 W schemacie Hornera przekształcany jest do postaci:
