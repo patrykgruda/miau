@@ -1,4 +1,3 @@
-# miau
 # Schemat Hornera
 
 Implementacja algorytmu Hornera w języku Python.
@@ -20,12 +19,19 @@ W schemacie Hornera przekształcany jest do postaci:
 
 $P(x) = (\dots((a_n x + a_{n-1})x + a_{n-2})x + \dots + a_1)x + a_0$
 
-Przykład zastosowania schematu Hornera:
-
+## 2.Przykład zastosowania schematu Hornera:
+Dany jest wielomian: $W\left( x \right)=4x^{4}-5x^{2}+7x-20$
 $W\left( x \right) = x\left(  4x^{2}-5x+7\right)-20$
+$W\left( x \right) = x\left(  x\left( 4x-5 \right)+7\right)-20$
+$W\left( 2 \right) = 2\left(  2\left( 4\cdot 2-5 \right)+7\right)-20$
+$W\left( 2 \right) = 2\left(  2\left( 8 -5 \right)+7\right)-20$
+$W\left( 2 \right) = 2\left(  2\cdot3+7\right)-20$
+$W\left( 2 \right) = 2\left(  6+7\right)-20$
+$W\left( 2 \right) = 2\cdot13-20$
+$W\left( 2 \right) = 26-20=6$
 
+## 3. Zastosowanie schematu Hornera do dzielenia wielomianów:
 
-## 2. Zastosowanie schematu Hornera
 
 
 
