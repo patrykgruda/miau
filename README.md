@@ -20,24 +20,14 @@ W schemacie Hornera przekształcany jest do postaci:
 
 $P(x) = (\dots((a_n x + a_{n-1})x + a_{n-2})x + \dots + a_1)x + a_0$
 
-Algorytm obliczania 
-$`
-w(x) &= x(4x^2 - 5x + 7) - 20 =\\
-&= x(x(4x-5)+7) - 20,\\
+Przykład zastosowania schematu Hornera:
 
-w(2) &= 2(2(4\cdot 2-5)+7)-20 =\\
-&= 2(2(8-5)+7) -20 =\\
-&= 2(2\cdot 3+7) -20 =\\
-&= 2(6+7) -20 =\\
-&= 2\cdot 13-20 =\\
-&= 26-20 = 6.\\
-`$
+$W\left( x \right) = x\left(  4x^{2}-5x+7\right)-20$
+
+
 ## 2. Zastosowanie schematu Hornera
 
-Schemat Hornera znajduje zastosowanie w:
-- Szybkim obliczaniu wartości wielomianu dla zadanej wartości \( x \),
-- Dzieleniu wielomianów przez dwumian \( x - c \),
-- Algorytmach numerycznych, takich jak metoda Newtona.
+
 
 ## 3. Implementacja algorytmu w Pythonie
 
