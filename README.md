@@ -5,8 +5,9 @@ Implementacja algorytmu Hornera w języku Python.
 
 ## 1. Czym jest schemat Hornera?
 
-S chemat Hornera to efektywny algorytm służący do obliczania wartości wielomianu dla zadanej wartości argumentu \( x \). Wykorzystuje metodę redukcji liczby operacji poprzez grupowanie wyrazów wielomianu. Dzięki temu algorytm jest szybki i wymaga mniejszej liczby mnożeń w porównaniu z metodami tradycyjnymi.
-
+Schemat Hornera jest to wspolna nazwa dla dwóch algorytmów
+-Algorytmu dzielenia wielomianu przez dwumian liniowy
+-Algorytmu obliczania wartości dowolnego wielomianu o jednej zmiennej
 ### Postać wielomianu
 
 Wielomian w postaci ogólnej:
@@ -19,6 +20,18 @@ W schemacie Hornera przekształcany jest do postaci:
 
 $P(x) = (\dots((a_n x + a_{n-1})x + a_{n-2})x + \dots + a_1)x + a_0$
 
+Algorytm obliczania 
+$`
+w(x) &= x(4x^2 - 5x + 7) - 20 =\\
+&= x(x(4x-5)+7) - 20,\\
+
+w(2) &= 2(2(4\cdot 2-5)+7)-20 =\\
+&= 2(2(8-5)+7) -20 =\\
+&= 2(2\cdot 3+7) -20 =\\
+&= 2(6+7) -20 =\\
+&= 2\cdot 13-20 =\\
+&= 26-20 = 6.\\
+`$
 ## 2. Zastosowanie schematu Hornera
 
 Schemat Hornera znajduje zastosowanie w:
